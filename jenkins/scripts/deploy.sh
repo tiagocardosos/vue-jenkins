@@ -9,10 +9,6 @@ set -x
 npm run build
 set +x
 
-set -x
-npm install http-server -g
-set +x
-
 echo 'The following "npm" command runs your Node.js/Vue.js application in'
 echo 'development mode and makes the application available for web browsing.'
 echo 'The "npm start" command has a trailing ampersand so that the command runs'
@@ -22,7 +18,7 @@ echo 'is followed by another command that retrieves the process ID (PID) value'
 echo 'of the previously run process (i.e. "npm start") and writes this value to'
 echo 'the file ".pidfile".'
 set -x
-http-server ./dist -p 3000 &
+http-server dist -p 3000 &
 sleep 1
 echo $! > .pidfile
 set +x
