@@ -9,11 +9,6 @@ pipeline {
         CI = true
     }
     stages {
-        stage('Install http-server') {
-            steps {
-                sh 'npm install http-server -g'
-            }
-        }
         stage('Build') {
             steps {
                 sh 'npm install'
