@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
-echo 'test2'
+echo 'test4'
 npm run lint
