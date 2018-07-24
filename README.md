@@ -1,4 +1,4 @@
-# vue-jenkins xxxxx
+# vue-jenkins
 
 ## Project setup
 ```
